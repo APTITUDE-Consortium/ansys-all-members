@@ -6,12 +6,12 @@ on:
 #  repository_dispatch:
 #    types: [update_all_members_team]
   workflow_dispatch:
-  pull_request:
-  push:
-    tags:
-      - "*"
-    branches:
-      - main
+#  pull_request:
+#  push:
+#    tags:
+#      - "*"
+#    branches:
+#      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
